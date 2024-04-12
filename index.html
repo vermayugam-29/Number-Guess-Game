@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex justify-end" id="darkMode">
+        <button class="rounded-full border-2 border-black w-[50px] h-[50px]" 
+         id="border">
+            <i class="fa-solid fa-moon" style="font-size:36px;color:black" id="moon"></i>
+        </button>
+    </div>
+    <div class="flex justify-between items-center flex-col gap-10" id="main">
+        <h1 class="font-bold text-3xl">Number Guessing Game</h1>
+
+        <div class="felx space-y-2">
+            <p>Try and guess a number between 1 and 100</p>
+            <p>You have 10 attempts to guess the right number.</p>
+        </div>
+        
+        
+        <form class="flex flex-col items-center mt-[70px]">
+            <h1>
+                Guess a  number
+                <input type="text" class="border-4 border-indigo-200 border-x-indigo-500"
+                id="guessNumber">
+            </h1>
+
+            <button class="bg-gray-400 rounded-lg w-[140px] h-[40px]
+            mt-[30px] mb-[30px]" id="submit">
+                Submit Guess
+            </button>
+        </form>
+        <div id="res"  class="flex flex-col justify-between">
+            <div>Previous Guess : <span id="prevGuess"></span></div>
+            <div>Guess Remaining : <span id="remainGuess"></span></div>
+
+            <p id="lowOrHigh" class="mt-[50px] font-bold text-lg"></p>
+        </div>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>

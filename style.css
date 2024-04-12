@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#gameOver{
+    background-color: rgb(156 163 175);
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 130px;
+}
